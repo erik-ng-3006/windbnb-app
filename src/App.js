@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React, { useState } from 'react';
+import HeaderTitle from './Components/Header/HeaderTitle';
+import SearchBar from './Components/SearchBar/SearchBar';
+import Footer from './Components/Footer/Footer';
+import MainContainer from './Components/MainContainer/MainContainer';
+import styles from './App.module.css';
+import apartments from './store/stays.json';
+import FilterDrawer from './Components/FilterDrawer/FilterDrawer';
+const App = () => {
+	const [staysState, setStaysState] = useState(apartments);
+	const [isShownFilterDrawer, setIsShownFilterDrawer] = useState(false);
+	return (
+		<>
+			{isShownFilterDrawer && (
+				<FilterDrawer
+					onClose={setIsShownFilterDrawer}
+					onFilter={setStaysState}
+					stays={staysState}
+				/>
+			)}
+			<div className={styles.flex}>
+				<HeaderTitle />
+				<SearchBar onClick={setIsShownFilterDrawer} />
+			</div>
+			<MainContainer stays={staysState} />
+			<Footer />
+		</>
+	);
+};
 
 export default App;

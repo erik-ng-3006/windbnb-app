@@ -1,0 +1,12 @@
+.icon {
+	vertical-align: middle;
+}
+
+.location {
+	width: fit-content;
+}
+
+.location:hover {
+	cursor: pointer;
+	color: #eb5757;
+}

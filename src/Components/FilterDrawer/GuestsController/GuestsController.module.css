@@ -1,0 +1,11 @@
+.controller {
+	margin-left: 2rem;
+	font-size: 0.875rem;
+	max-width: fit-content;
+}
+
+@media (min-width: 768px) {
+	.controller {
+		margin-left: 35rem;
+	}
+}

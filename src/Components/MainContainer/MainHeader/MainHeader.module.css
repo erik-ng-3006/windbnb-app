@@ -1,0 +1,10 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.header div {
+	color: #4f4f4f;
+	font-weight: 500;
+}

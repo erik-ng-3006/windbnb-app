@@ -1,0 +1,32 @@
+.calculator h3 {
+	font-weight: 600;
+}
+
+.calculator p {
+	color: #828282;
+	margin-bottom: 1rem;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.calculator button {
+	background-color: transparent;
+	padding: 0.3rem 0.5rem;
+	border: 1px solid #828282;
+	border-radius: 4px;
+}
+
+.calculator button:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.calculator button:disabled:hover {
+	background-color: transparent;
+	cursor: default;
+}
