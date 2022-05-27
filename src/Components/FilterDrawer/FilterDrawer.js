@@ -42,14 +42,13 @@ const FilterDrawer = (props) => {
 		props.onFilter(
 			props.stays.filter((stay) => {
 				return (
-					locationInput
+					stay.city
 						.toLowerCase()
-						.includes(stay.city.toLowerCase()) &&
-					stay.maxGuests > guestsInput
+						.includes(locationInput.toLocaleLowerCase()) &&
+					stay.maxGuests >= guestsInput
 				);
 			})
 		);
-
 		props.onClose(false);
 	};
 
@@ -89,14 +88,13 @@ const FilterDrawer = (props) => {
 							value={guestsInput}
 						/>
 					</div>
-					<div></div>
 				</div>
 
 				{isShownLocation && (
 					<ul>
 						<LocationListItem
 							stays={props.stays}
-							onItemLocationClick={setLocationInput}
+							onSetInputValue={setLocationInput}
 						/>
 					</ul>
 				)}

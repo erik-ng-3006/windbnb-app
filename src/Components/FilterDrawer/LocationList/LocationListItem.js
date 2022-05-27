@@ -8,7 +8,9 @@ const LocationListItem = (props) => {
 		return cityArr.indexOf(city) === pos;
 	});
 
-	const onClickHandle = () => {};
+	const onClickHandle = (e) => {
+		props.onSetInputValue(e.target.innerText.split(', ')[0]);
+	};
 
 	return (
 		<>

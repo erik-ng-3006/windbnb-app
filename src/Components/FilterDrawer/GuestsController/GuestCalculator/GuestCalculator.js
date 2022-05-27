@@ -38,11 +38,14 @@ const GuestCalculator = (props) => {
 				<button
 					onClick={minusBtnHandle}
 					disabled={countState.count === 0}
+					type='button'
 				>
 					-
 				</button>
 				<div>{countState.count}</div>
-				<button onClick={plusBtnHandle}>+</button>
+				<button onClick={plusBtnHandle} type='button'>
+					+
+				</button>
 			</div>
 		</div>
 	);

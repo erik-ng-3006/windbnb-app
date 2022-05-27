@@ -4,6 +4,7 @@
 
 .location {
 	width: fit-content;
+	transition: color 300ms ease-out;
 }
 
 .location:hover {
