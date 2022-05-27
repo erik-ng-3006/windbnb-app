@@ -6,6 +6,7 @@
 	bottom: 1rem;
 	right: 50%;
 	transform: translateX(50%);
+	width: 100%;
 }
 
 .footer a {

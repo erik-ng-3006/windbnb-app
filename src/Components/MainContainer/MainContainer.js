@@ -4,7 +4,7 @@ import Apartments from './Apartments/Apartments';
 
 const MainContainer = (props) => {
 	return (
-		<main>
+		<main style={{ marginBottom: '3rem' }}>
 			<MainHeader stays={props.stays} />
 			<Apartments stays={props.stays} />
 		</main>
