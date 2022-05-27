@@ -50,7 +50,12 @@
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+-   [x] User story: I can see a list of properties
+-   [x] User story: I can see the property card with a name, rating, apartment type, and super host
+-   [x] User story: I can open the filter drawer
+-   [x] User story: I can filter properties by location and number of guests
+-   [x] User story: I can see the number of filtered items
+-   [x] User story: I can see pages following given designs
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD) was to build an application to complete the given user stories.
 
@@ -73,4 +78,4 @@ $ npm start
 
 ## Contact
 
--   GitHub [@your-username](https://{github.com/erik-ng-3006})
+-   GitHub [@erik-ng-3006](https://github.com/erik-ng-3006)
